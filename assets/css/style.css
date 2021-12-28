@@ -1,0 +1,118 @@
+html,
+body,
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.map {
+    height: 100%;
+    width: 80%;
+    float: right;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    font-size: 1vw;
+    float: left;
+    background-color: black;
+    color: white;
+}
+
+.box {
+    margin: 5px;
+    border: 2px white solid;
+    border-radius: 0.5vw;
+    padding: 5px;
+    font-size: 1vw;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.box hr {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 0px transparent solid;
+    border-top: 2px white dotted;
+}
+
+.box h1 {
+    font-size: 1.8vw;
+    text-align: center;
+    margin: 0;
+}
+
+.box h2 {
+    font-size: 1.4vw;
+    margin: 0;
+}
+
+.box h3 {
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.box h4 {
+    font-size: 1.1vw;
+    margin: 0;
+}
+
+.box .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0px 0px 0px;
+}
+
+.box .buttons button {
+    border: 1px white solid;
+    border-radius: 0.25vw;
+    background-color: grey;
+    width: 30%;
+}
+
+.box textarea {
+    border: 1px white solid;
+    border-radius: 0.5vw;
+    background-color: white;
+    width: 98%;
+    height: 200px;
+    resize: vertical;
+    outline: none;
+    font-size: 0.8vw;
+}
+
+.row {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.row .left {
+    width: 70%;
+    float: left;
+}
+
+.row .right {
+    width: 30%;
+    text-align: center;
+    float: right;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.toolbox {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 20%;
+}
+
+.data-out {
+    font-size: 1.1vw;
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>OpenLayers example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./libs/OpenLayers/ol.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div id="sidebar" class="sidebar">
+            <!-- CURSOR DETAILS -->
+            <div class="box">
+                <h1>Cursor Details</h1>
+                <hr>
+                <div class="row">
+                    <h4 class="left">Latitude</h4>
+                    <span class="right data-out">55.5° N</span>
+                </div>
+                <div class="row">
+                    <h4 class="left">Longitude</h4>
+                    <span class="right data-out">002.4° E</span>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="box">
+                <h1>Navigation</h1>
+                <hr>
+                <div class="row">
+                    <h4 class="left">Next Waypoint</h4>
+                    <span class="right data-out">WP1</span>
+                </div>
+                <div class="row">
+                    <h4 class="left">Planned Course</h4>
+                    <span class="right data-out">037°</span>
+                </div>
+                <div class="row">
+                    <h4 class="left">Course from last Plot</h4>
+                    <span class="right data-out">030°</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <h4 class="left">Waypoint Distance</h4>
+                    <span class="right data-out">60 NM</span>
+                </div>
+                <div class="row">
+                    <h4 class="left">Distance from last Plot</h4>
+                    <span class="right data-out">68 NM</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <h4 class="left">Total Planned Distance</h4>
+                    <span class="right data-out">900 NM</span>
+                </div>
+                <div class="row">
+                    <h4 class="left">Total Distance Sailed</h4>
+                    <span class="right data-out">50 NM</span>
+                </div>
+                <div class="row">
+                    <h4 class="left">Total Distance Remaining</h4>
+                    <span class="right data-out">850 NM</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Notes</h1>
+                <hr>
+                <textarea name="notes" id="notes" rows="10"></textarea>
+            </div>
+
+        </div>
+        <!-- TOOLBOX -->
+        <div class="toolbox">
+            <div class="box">
+                <h1>TOOLBOX</h1>
+                <hr>
+                <div class="row">
+                    <h3>Drawing:</h3>
+                </div>
+                <div class="buttons">
+                    <button>Line</button>
+                    <button>Circle</button>
+                    <button>Freehand</button>
+                </div>
+
+                <div class="row">
+                    <h3>Position Plotting:</h3>
+                </div>
+                <div class="buttons">
+                    <button>Estimate</button>
+                    <button>Dead Reckoning</button>
+                    <button>Fix</button>
+                    </button>
+                </div>
+
+                <div class="row">
+                    <h3>Passage Planning:</h3>
+                </div>
+                <div class="buttons">
+                    <button>Add Waypoint</button>
+                    <button>Move Waypoint</button>
+                    <button>Delete Waypoint</button>
+                </div>
+
+                <div class="row">
+                    <h3>Writing:</h3>
+                </div>
+                <div class="buttons">
+                    <button>Add Note</button>
+                    <button>Edit Note</button>
+                    <button>Delete Note</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MAP -->
+        <div id="map" class="map"></div>
+        <script src="./assets/js/map.js"></script>
+    </div>
+</body>
+
+</html>
